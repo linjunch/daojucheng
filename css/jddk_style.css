@@ -1,0 +1,520 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    background: white;
+}
+a{
+    text-decoration: none;
+}
+/*导航占位*/
+.top-bar{
+    width: 100%;
+    height: 164px;
+}
+/*修改高度112*/
+.hold-position{
+    width: 100%;
+    height: 164px;
+    position: relative;
+}
+/*修改高度64*/
+.info-fix{
+    width: 100%;
+    height: 100px;
+    background: #000;
+    border-bottom: 1px solid #222222;
+    min-width: 1280px;
+}
+.info-fix .top-info{
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    background: #000;
+
+}
+/*修改宽98高52和背景位置-6 -150加mt7px*/
+.info-fix .top-info .i-jcp{
+    width: 148px;
+    height: 79px;
+    float: left;
+    margin-left: 10px;
+    background:  url(../images/ico-comm.png) -186px 8px no-repeat;
+}
+/*修改margin-top为18px*/
+.info-fix .top-info .i-solgan{
+    width: 172px;
+    height: 34px;
+    float: left;
+    margin-top: 38px;
+    margin-left: 10px;
+    background:  url(../images/ico-comm.png) 0 -28px no-repeat;
+}
+/*修改margin-top为21px*/
+.info-fix .top-info .carbox{
+    float: right;
+    width: 110px;
+    height: 24px;
+    margin-top: 47px;
+    list-style: none;
+}
+.info-fix .top-info .carbox .i-cart{
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 7px;
+    background:  url(../images/ico-comm.png) -2px -63px no-repeat;
+    float: left;
+}
+.info-fix .top-info .carbox span{
+    line-height: 24px;
+    font-size: 16px;
+    color: #f6f7ef;
+}
+.info-fix .top-info .carbox .cart-num{
+    display: block;
+    float: right;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #ffc933;
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    line-height: 24px;
+}
+/*修改margin-top为12px*/
+.info-fix .top-info .loginbar{
+    width: 64px;
+    float: right;
+    margin-top: 39px;
+    margin-right: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+.info-fix .top-info .loginbar a{
+    line-height: 40px;
+    font-size: 16px;
+    color: #f6f7ef;
+}
+/*修改margin-top为13px*/
+.info-fix .top-info .sosobox{
+    float: right;
+    width: 240px;
+    height: 40px;
+    margin: 39px 65px 0 0;
+    border-radius: 20px;
+    background: #242424;
+}
+.info-fix .top-info .sosobox a{
+    background:  url(../images/ico-comm.png) -80px -3px no-repeat;
+    float: left;
+    width: 16px;
+    height: 17px;
+    margin: 12px 5px 0 11px;
+}
+.info-fix .top-info .sosobox input{
+    outline: none;
+    border: none;
+    border-radius: 18px;
+    background: #242424;
+    width: 207px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 16px;
+    color: #aaa;
+    text-indent: 0.5em;
+}
+/*导航菜单栏*/
+/*修改高度为48*/
+.head-fix{
+    width: 100%;
+    height: 64px;
+    background: #000;
+    position: relative;
+}
+.top-head{
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    background: black;
+}
+.top-menu li a{
+    color: #a6a6a6;
+}
+/*修改字体大小14*/
+.top-head .top-all-goods{
+    line-height: 64px;
+    float: right;
+    width: 118px;
+    height: 100%;
+    color: #fff;
+    font-size: 16px;
+}
+.top-head .top-all-goods .i-arrtop{
+    width: 10px;
+    height: 12px;
+    margin-left: 7px;
+    display: inline-block;
+    background:  url(../images/ico-comm.png) -100px -2px no-repeat;
+}
+/*修改line-height为48p以及字体大小14*/
+.top-head .top-menu li{
+    width: 129px;
+    height: 100%;
+    line-height: 64px;
+    float: left;
+    list-style: none;
+    text-align: center;
+    color: #a6a6a6;
+    font-size: 18px;
+    cursor:pointer;
+}
+.top-menu li:hover{
+    background:  url(../images/ico-comm.png) -28px -84px no-repeat;
+}
+/*隐藏的全部商品*/
+/*修改top为48px*/
+.allgoods{
+    width: 100%;
+    height: 353px;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    display: none;
+    background: #fff;
+    z-index: 3;
+    min-width: 1280px;
+}
+.goodsmenu{
+    width: 1280px;
+    height: 328px;
+    margin: 0 auto;
+}
+.goodsmenu>ul{
+    width: 1000px;
+    height: 328px;
+    margin: 25px auto 0;
+}
+.goodsmenu>ul>li{
+    list-style: none;
+    width: 100px;
+    height: 308px;
+    float: left;
+}
+.goodsmenu>ul>li>a{
+    display: block;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    margin-left: 10px;
+    border-bottom: 4px solid #fff;
+}
+.goodsmenu>ul>li>a>img{
+    padding-bottom: 20px;
+}
+.goodsmenu>ul>li>a>p{
+    color: #333;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+}
+.goodsmenu>ul>li>ul{
+    margin-top: 14px;
+}
+.goodsmenu>ul>li>ul>li{
+    text-align: center;
+    margin-left: 10px;
+    list-style: none;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+}
+.goodsmenu>ul>li>ul>li>a{
+    color: #333;
+}
+/*首页》分类*/
+.classify{
+    width: 1280px;
+    height: 50px;
+    /*background: red;*/
+    margin: 0 auto;
+    line-height: 50px;
+}
+.classify span:nth-child(1){
+    color: #333;
+}
+.classify span:nth-child(2){
+    color: #a6a6a6;
+}
+/*中间内容*/
+/*排序&筛选*/
+.page-main{
+    width: 1280px;
+    height: 1366px;
+    margin: 0 auto;
+}
+.list{
+    width: 1280px;
+    height: 52px;
+    margin: 0 auto;
+    padding-top: 12px;
+}
+.sort-fil{
+    color: #a6a6a6;
+    width: 1180px;
+    height: 30px;
+    margin: 0 auto;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+.sort-fil .sort-fl{
+    float: left;
+    line-height: 30px;
+}
+.sort-fil .sort-fl dt{
+    float: left;
+    width: 42px;
+}
+.sort-fil .sort-fl dd {
+    float: left;
+    width: 81px;
+    text-align: center;
+    cursor: pointer;
+}
+.sort-fil .sort-fl dd:nth-child(1){
+    width: 68px;
+}
+.sort-fil .sort-fl dd i{
+    display: inline-block;
+    width: 8px;
+    height: 12px;
+    background:  url(../images/ico-comm.png) -79px -64px no-repeat;
+}
+.sort-fil .sort-fr{
+    float: right;
+    line-height: 30px;
+}
+.sort-fil .sort-fr dt{
+    float: right;
+    width: 42px;
+}
+.sort-fil .sort-fr dd{
+    float: right;
+    width: 89px;
+    text-align: center;
+    cursor: pointer;
+}
+.sort-fil .sort-fr dd:nth-child(1){
+    width: 117px;
+}
+.sort-fil .sort-fr dd i{
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+/*筛选切换背景类*/
+.i-check{
+    background:  url(../images/ico-comm.png) -2px -2px no-repeat;
+}
+.i-checked{
+    background:  url(../images/ico-comm.png) -22px -2px no-repeat;
+}
+/*商品图片列表*/
+.good-list{
+    width: 1280px;
+    height: 1292px;
+    margin-top: 20px;
+}
+.good-list ul{
+    width: 1200px;
+    height: 1134px;
+    margin: 0 auto;
+}
+.good-list ul li{
+    width: 280px;
+    height: 356px;
+    list-style: none;
+    float: left;
+    margin: 0 10px 20px ;
+    position: relative;
+    transition:all .2s linear;
+}
+.good-list ul li:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    transform: translate3d(0, -2px, 0);
+}
+.good-list ul li a{
+    text-align: center;
+}
+.good-list ul li a img{
+    width: 280px;
+    height: 268px;
+}
+.good-list ul li p{
+    margin: 25px 0 5px;
+    color: #444;
+}
+.good-list ul li span:nth-of-type(1){
+    font-weight: bold;
+    color: #f7545f;
+
+}
+.good-list ul li span:nth-of-type(2){
+    text-decoration: line-through;
+    color: #999;
+}
+    /*图片换页*/
+.page-btn{
+    width: 1190px;
+    height: 98px;
+    margin: 0 auto;
+    position: relative;
+}
+.page-btn .current{
+    background: #f3bf19;
+    color: white;
+}
+.page-btn span{
+    width: 40px;
+    height: 40px;
+    display: block;
+    float: left;
+    margin-top: 29px;
+    text-align: center;
+    margin-left: 5px;
+}
+.page-btn span a{
+    width: 38px;
+    height: 38px;
+    border: 1px solid transparent;
+    line-height: 38px;
+    display: block;
+    color: #333;
+    font-size: 16px;
+}
+.page-btn span:nth-child(6) {
+    float: right;
+}
+.page-btn span:nth-child(7) {
+    float: right;
+}
+.page-btn .page-pre a{
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.page-btn .page-pre a i{
+    width: 10px;
+    height: 18px;
+    display: block;
+    margin: 0 auto;
+    background:  url(../images/ico_center.png) -411px -345px no-repeat;
+}
+.page-btn .page-next a{
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.page-btn .page-next a i{
+    width: 10px;
+    height: 18px;
+    display: block;
+    margin: 0 auto;
+    background:  url(../images/ico_center.png) -429px -345px no-repeat;
+}
+/*尾部logo*/
+.footer{
+    width: 100%;
+    height: 233px;
+    background: #1b1b1b;
+    position: relative;
+}
+.footer .footer-info{
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: #1b1b1b;
+    border-bottom: 1px solid #333;
+}
+.footer .footer-info .djc-logo{
+    width: 315px;
+    height: 100%;
+    float: left;
+}
+.footer .footer-info .djc-logo a img{
+    margin-top: 48px;
+    margin-left: 60px;
+}
+.footer .footer-info .footer-about{
+    width: 397px;
+    height: 126px;
+    margin-left: 315px;
+    text-align: center;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    position: absolute;
+    top: 48px;
+}
+.footer .footer-info .footer-about li{
+    list-style: none;
+    float: left;
+    width: 194px;
+    height: 42px;
+}
+.footer .footer-info .footer-about li a{
+    color: #a8a8a8;
+    line-height: 42px;
+}
+.footer .footer-info .footer-about li a:hover{
+    color: white;
+}
+.footer .footer-info .footer-code{
+    float: right;
+    width: 568px;
+    height: 100%;
+    padding-top: 48px;
+    box-sizing: border-box;
+}
+.footer .footer-info .footer-code li{
+    float: left;
+    list-style: none;
+    width: 189px;
+    height: 162px;
+    text-align: center;
+}
+.footer .footer-info .footer-code li p{
+    color: #fff;
+    font-size: 16px;
+}
+.footer .footer-info .footer-code li img{
+    width: 100px;
+    height: 100px;
+}
+/*最底部信息*/
+.footer_abied{
+    width: 100%;
+    height: 142px;
+    background: #1b1b1b;
+}
+.footer-ied{
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 30px 0 40px;
+    text-align: center;
+    background: #1b1b1b;
+}
+.footer-ied p{
+    color: #777;
+    font-size: 12px;
+}
+.footer-ied p a {
+    color: #777;
+}
+
+

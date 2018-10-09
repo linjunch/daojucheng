@@ -1,0 +1,538 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background: #f5f5f5;
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    background: white;
+}
+a{
+    text-decoration: none;
+}
+/*头部*/
+/*头部注意事件轮播*/
+.top-bar{
+    width: 100%;
+    height: 194px;
+    margin: 0 auto;
+}
+.top-bar .top-not{
+    width: 100%;
+    height: 30px;
+    background: #000;
+}
+.top-notice{
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.ico-comm{
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin: 6px 15px 0 5px;
+    background:  url(../images/ico-comm.png) 0 -95px no-repeat;
+}
+.notice-txt{
+    height: 120px;
+    width: 1280px;
+    line-height: 30px;
+    background: #141415;
+    left: 36px;
+    position: absolute;
+}
+.notice-txt li{
+    font-size: 14px;
+    color: #a7a7a7;
+    list-style: none;
+    height: 30px;
+}
+/*导航占位*/
+.hold-position{
+    width: 100%;
+    height: 164px;
+    position: relative;
+}
+/*修改高度*/
+.info-fix{
+    width: 100%;
+    height: 100px;
+    background: #000;
+}
+.info-fix .top-info{
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    background: black;
+    box-sizing: border-box;
+    border-bottom: 1px solid #222222;
+}
+/*修改宽高和背景位置*/
+.info-fix .top-info .i-jcp{
+    width: 148px;
+    height: 79px;
+    float: left;
+    margin-left: 10px;
+    background:  url(../images/ico-comm.png) -186px 8px no-repeat;
+}
+/*修改margin-top*/
+.info-fix .top-info .i-solgan{
+    width: 172px;
+    height: 34px;
+    float: left;
+    margin: 38px 0 0 10px;
+    background:  url(../images/ico-comm.png) 0 -28px no-repeat;
+}
+/*修改margin-top*/
+.info-fix .top-info .carbox{
+    float: right;
+    width: 110px;
+    height: 24px;
+    margin-top: 47px;
+    list-style: none;
+}
+.info-fix .top-info .carbox .i-cart{
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 7px;
+    background:  url(../images/ico-comm.png) -2px -63px no-repeat;
+    float: left;
+}
+.info-fix .top-info .carbox span{
+    line-height: 24px;
+    font-size: 16px;
+    color: #f6f7ef;
+}
+.info-fix .top-info .carbox .cart-num{
+    display: block;
+    float: right;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #ffc933;
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    line-height: 24px;
+}
+/*修改margin-top*/
+.info-fix .top-info .loginbar{
+    width: 64px;
+    height: 40px;
+    float: right;
+    margin-top: 39px;
+    margin-right: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+.info-fix .top-info .loginbar a{
+    line-height: 40px;
+    font-size: 16px;
+    color: #f6f7ef;
+}
+/*修改margin-top*/
+.info-fix .top-info .sosobox{
+    float: right;
+    width: 240px;
+    height: 40px;
+    margin: 39px 65px 0 0;
+    border-radius: 20px;
+    background: #242424;
+}
+.info-fix .top-info .sosobox a{
+    background:  url(../images/ico-comm.png) -80px -3px no-repeat;
+    float: left;
+    width: 16px;
+    height: 17px;
+    margin: 12px 5px 0 11px;
+}
+.info-fix .top-info .sosobox input{
+    outline: none;
+    border: none;
+    border-radius: 18px;
+    background: #242424;
+    width: 207px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 16px;
+    color: #aaa;
+    text-indent: 0.5em;
+}
+/*导航菜单栏*/
+/*修改高度*/
+.head-fix{
+    width: 100%;
+    height: 64px;
+    background: #000;
+    position: relative;
+}
+.top-head{
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    background: black;
+}
+.top-menu li a{
+    color: #a6a6a6;
+}
+/*修改line-height以及字体大小*/
+.top-head .top-all-goods{
+    line-height: 64px;
+    float: right;
+    width: 118px;
+    height: 100%;
+    color: #fff;
+    font-size: 16px;
+}
+.top-head .top-all-goods .i-arrtop{
+    width: 10px;
+    height: 12px;
+    margin-left: 7px;
+    display: inline-block;
+    background:  url(../images/ico-comm.png) -100px -2px no-repeat;
+}
+/*修改line-height以及字体大小*/
+.top-head .top-menu li{
+    width: 129px;
+    height: 100%;
+    line-height: 64px;
+    float: left;
+    list-style: none;
+    text-align: center;
+    color: #a6a6a6;
+    font-size: 18px;
+    cursor:pointer;
+}
+.top-menu li:hover{
+    background:  url(../images/ico-comm.png) -28px -83px no-repeat;
+}
+/*隐藏的全部商品*/
+.allgoods{
+    width: 100%;
+    height: 353px;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    display: none;
+    background: #fff;
+    z-index: 3;
+    min-width: 1280px;
+}
+.goodsmenu{
+    width: 1280px;
+    height: 328px;
+    margin: 0 auto;
+
+    background: #fff;
+}
+.goodsmenu>ul{
+    width: 1000px;
+    height: 328px;
+    margin: 25px auto 0;
+}
+.goodsmenu>ul>li{
+    list-style: none;
+    width: 100px;
+    height: 308px;
+    float: left;
+}
+.goodsmenu>ul>li>a{
+    display: block;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    margin-left: 10px;
+    border-bottom: 4px solid #fff;
+}
+.goodsmenu>ul>li>a>img{
+    padding-bottom: 20px;
+}
+.goodsmenu>ul>li>a>p{
+    color: #333;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+}
+.goodsmenu>ul>li>ul{
+    margin-top: 14px;
+}
+.goodsmenu>ul>li>ul>li{
+    text-align: center;
+    margin-left: 10px;
+    list-style: none;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+}
+.goodsmenu>ul>li>ul>li>a{
+    color: #333;
+}
+/*广告区域*/
+.banner{
+    width: 100%;
+    height: 412px;
+}
+.banner .ban-pic{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    min-width: 1280px;
+    margin: 0 auto;
+}
+.banner .ban-pic ul{
+    width: 9999px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+.banner .ban-pic ul li{
+    float: left;
+    height: 100%;
+    list-style: none;
+    text-align: center;
+}
+.banner .ban-pic ul li a{
+    width: 100%;
+    height: 100%;
+}
+.banner .ban-pic ul li a img{
+    width: 1920px;
+    height: 412px;
+    min-width: 1280px;
+}
+.ban_line{
+    position: absolute;
+    width: 220px;
+    height: 4px;
+    list-style: none;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -110px;
+}
+.ban_line li{
+    float: left;
+    width: 28px;
+    height: 4px;
+    margin: 0 4px;
+    background: rgba(123,123,123,0.3);
+}
+.ban_line li:nth-child(1){
+    background: yellow;
+}
+/*中间内容区域*/
+.mid{
+    width: 1280px;
+    height: 3360px;
+    margin: 0 auto;
+    /*margin-top: -30px;*/
+    border-radius: 8px;
+    position: relative;
+    background: white;
+    top: -30px;
+    z-index: 2;
+}
+.mid .mid-tit{
+    width: 1280px;
+    height: 88px;
+    margin: 0 auto;
+    padding: 50px 50px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+.mid .mid-tit h3{
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: bold;
+    color: #333;
+    font-size: 28px;
+}
+.mid .mid-tit>span{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 32px;
+}
+.mid .mid-tit a{
+    color: #333 ;
+    float: right;
+}
+.mid .mid-tit a span{
+    font-size: 16px;
+    line-height: 32px;
+    display: inline-block;
+    float: left;
+}
+.mid .mid-tit a i{
+    display: inline-block;
+    float: right;
+    margin-top: 6px;
+    margin-left: 6px;
+    width: 20px;
+    height: 20px;
+    background:  url(../images/ico-comm.png) -42px -2px no-repeat;
+
+}
+.mid .rec-list{
+    width: 1200px;
+    height: 376px;
+    margin: 0 auto;
+}
+.mid .rec-list ul li{
+    list-style: none;
+    float: left;
+    margin: 0 10px;
+    width: 280px;
+    height: 376px;
+    position: relative;
+    transition: all .2s linear;
+}
+.mid .rec-list ul li:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    transform: translate3d(0,-2px,0);
+}
+.mid .recommend{
+    width: 1280px;
+    height: 2823px;
+    margin: 0 auto;
+}
+.mid .recommend .mybox{
+    width: 1280px;
+    height: 240px;
+    text-align: center;
+}
+.mid .recommend .good-list{
+    width: 1280px;
+    height: 358px;
+    margin-top: 20px;
+}
+.mid .recommend .good-list ul{
+    width: 1200px;
+    height: 378px;
+    margin: 0 auto;
+}
+.mid .recommend .good-list ul li{
+    width: 280px;
+    height: 356px;
+    list-style: none;
+    float: left;
+    margin: 0 10px 20px ;
+    position: relative;
+    transition:all .2s linear;
+}
+.good-list ul li:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    transform: translate3d(0, -2px, 0);
+}
+.mid .recommend .good-list ul li a{
+    text-align: center;
+}
+.mid .recommend .good-list ul li a img{
+    width: 280px;
+    height: 268px;
+}
+.mid .recommend .good-list ul li p:nth-child(1){
+    margin: 25px 0 5px;
+    color: #444;
+}
+.mid .recommend .good-list ul li p:nth-child(2){
+    font-weight: bold;
+    color: #f7545f;
+}
+/*尾部二维码logo*/
+.footer{
+    width: 100%;
+    height: 233px;
+    background: #1b1b1b;
+    position: relative;
+}
+.footer .footer-info{
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-bottom: 1px solid #333;
+    background: #1b1b1b;
+}
+.footer .footer-info .djc-logo{
+    width: 315px;
+    height: 100%;
+    float: left;
+}
+.footer .footer-info .djc-logo a img{
+    margin-top: 48px;
+    margin-left: 60px;
+}
+.footer .footer-info .footer-about{
+    width: 397px;
+    height: 126px;
+    margin-left: 315px;
+    text-align: center;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    position: absolute;
+    top: 48px;
+}
+.footer .footer-info .footer-about li{
+    list-style: none;
+    float: left;
+    width: 194px;
+    height: 42px;
+    transition: all 0.5s;
+}
+
+.footer .footer-info .footer-about li a{
+    color: #a8a8a8;
+    line-height: 42px;
+}
+.footer .footer-info .footer-about li a:hover{
+    color: white;
+}
+.footer .footer-info .footer-code{
+    float: right;
+    width: 568px;
+    height: 100%;
+    padding-top: 48px;
+    box-sizing: border-box;
+}
+.footer .footer-info .footer-code li{
+    float: left;
+    list-style: none;
+    width: 189px;
+    height: 162px;
+    text-align: center;
+}
+.footer .footer-info .footer-code li p{
+    color: #fff;
+    font-size: 16px;
+}
+.footer .footer-info .footer-code li img{
+    width: 100px;
+    height: 100px;
+}
+/*页尾相关信息*/
+.footer_abied{
+    width: 100%;
+    height: 142px;
+    background: #1b1b1b;
+}
+.footer-ied{
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 30px 0 40px;
+    text-align: center;
+    background: #1b1b1b;
+}
+.footer-ied p{
+    color: #777;
+    font-size: 12px;
+}
+.footer-ied p a {
+    color: #777;
+}
